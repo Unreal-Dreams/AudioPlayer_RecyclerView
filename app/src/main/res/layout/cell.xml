@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3000"/>
+
+    <TextView
+        android:id="@+id/tvIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="15dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/album3"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        ></ImageView>
+    <ImageView
+        android:id="@+id/ivPlayPause"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-73dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/tvIndex"
+        android:src="@android:drawable/ic_media_play"
+         android:tint="@color/light"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faded"
+            android:textSize="25dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charlie Puth | Vats"
+            android:textSize="12dp"></TextView>
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:text="Use this sound"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/btn_rounded"></Button>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/music"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="-80dp"></ImageView>
+</LinearLayout>
+    <SeekBar
+        android:id="@+id/sbProgress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ivPlayPause"/>
+
+</RelativeLayout>
