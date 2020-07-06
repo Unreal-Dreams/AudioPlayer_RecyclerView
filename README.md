@@ -1,6 +1,6 @@
 **Demo List Player**
 
-**Level:** Beginner
+This project is a simple to use library with which you can with any project to show your audio files in recyler view and you can use the audio in various sections of your app like Tiktok and  Nojoto Does.
 
 **Objectives:**
 
